@@ -7,7 +7,8 @@ WeRateDogs 下载了他们的推特档案，并通过电子邮件发送给优达
 WeRateDogs banner
 图片来自 波士顿杂志*
 我们需要什么软件？
-使用这里提供的 Jupyter Notebook workspace，在优达学城课堂的 项目 workspace 页面可以完成整个项目。
+使用这里使用了Jupyter Notebook workspace。
+本项目来自优达学城课堂。
 
 如果想在优达学城课堂以外操作，你需要满足以下软件要求：
 
@@ -19,3 +20,16 @@ requests
 tweepy
 json
 
+###数据表结构
+以该表格中的最后一行数据来理解各列数据：
+
+tweet_id 是推特链接的最后一部分，位于 "status/" 后面 → https://twitter.com/dog_rates/status/889531135344209921
+jpg_url 是预测的图像资源链接
+img_num 最可信的预测结果对应的图像编号 → 1 推特中的第一张图片
+p1 是算法对推特中图片的一号预测 → 金毛犬
+p1_conf 是算法的一号预测的可信度 → 95%
+p1_dog 是一号预测该图片是否属于“狗”（有可能是其他物种，比如熊、马等） → True 真
+p2 是算法对推特中图片预测的第二种可能性 → 拉布拉多犬
+p2_conf 是算法的二号预测的可信度 → 1%
+p2_dog 是二号预测该图片是否属于“狗” → True 真
+以此类推...
