@@ -20,7 +20,7 @@ requests
 tweepy
 json
 
-###数据表结构
+### 数据表结构
 以该表格中的最后一行数据来理解各列数据：
 
 - tweet_id 是推特链接的最后一部分，位于 "status/" 后面 → https://twitter.com/dog_rates/status/889531135344209921
